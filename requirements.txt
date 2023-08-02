@@ -34,7 +34,7 @@ greenlet==2.0.2 ; python_version < '3.12' and platform_python_implementation == 
 gunicorn==21.2.0
 humanize==4.7.0 ; python_version >= '3.8'
 idna==3.4 ; python_version >= '3.5'
-kombu==4.5.0,<=4.6.5; python_version >= '3.8'
+kombu==5.3.0b3; python_version >= '3.8'
 mysqlclient==2.1.1
 oauthlib==3.2.2 ; python_version >= '3.6'
 packaging==23.1 ; python_version >= '3.7'

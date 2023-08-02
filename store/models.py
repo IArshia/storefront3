@@ -3,7 +3,7 @@ from django.conf import settings
 from django.core.validators import MinValueValidator
 from django.db import models
 from .validators import validate_file_size
-from uuid import uuid4
+import uuid
 
 
 class Promotion(models.Model):
@@ -121,7 +121,7 @@ class Address(models.Model):
 
 
 class Cart(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid4)
+    id=models.CharField(primary_key=True,default=uuid.uuid4, editable=False, max_length=36)
     created_at = models.DateTimeField(auto_now_add=True)
 
 

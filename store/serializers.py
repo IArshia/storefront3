@@ -1,5 +1,6 @@
 from decimal import Decimal
 from django.db import transaction
+from uuid import uuid4
 from rest_framework import serializers
 from .signals import order_created
 from .models import Cart, CartItem, Customer, Order, OrderItem, Product, Collection, Review, ProductImage

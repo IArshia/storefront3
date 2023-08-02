@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='cart',
             name='id',
-            field=models.UUIDField(default=uuid.uuid4, primary_key=True, serialize=False),
+            field=models.CharField(primary_key=True,default=uuid.uuid4, editable=False, max_length=36, serialize=False),
         ),
     ]

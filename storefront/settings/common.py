@@ -13,9 +13,18 @@ import os
 from pathlib import Path
 from datetime import timedelta
 from celery.schedules import crontab
+import environ
+
+env = environ.Env()
+
+environ.Env.read_env()
+
+DEBUG = True
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
+
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -57,8 +66,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# if DEBUG:
-#     MIDDLEWARE += ['silk.middleware.SilkyMiddleware']
+if DEBUG:
+    MIDDLEWARE += ['silk.middleware.SilkyMiddleware']
 
 INTERNAL_IPS = [
     # ...

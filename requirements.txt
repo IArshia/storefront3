@@ -3,7 +3,7 @@ amqp==5.1.1 ; python_version >= '3.6'
 asgiref==3.7.2 ; python_version >= '3.7'
 autopep8==2.0.2 ; python_version >= '3.6'
 billiard==4.1.0 ; python_version >= '3.7'
-celery==5.3.1
+celery==5.3.0
 certifi==2023.7.22 ; python_version >= '3.6'
 cffi==1.15.1 ; platform_python_implementation == 'CPython' and sys_platform == 'win32'
 charset-normalizer==3.2.0 ; python_full_version >= '3.7.0'

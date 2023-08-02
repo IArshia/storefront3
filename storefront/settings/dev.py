@@ -16,17 +16,15 @@ CACHES = {
         }
     }
 }
+
 DATABASES = {
-    'default': dj_database_url.parse(env('DATABASE_URL'))
+     'default': {
+         'ENGINE': 'django.db.backends.mysql',
+         'NAME': 'storefront3',
+         'HOST': 'localhost',
+         'USER': 'root',
+         'PASSWORD': 'Iarshi4_1381'
+     }
 }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'storefront3',
-#         'HOST': 'localhost',
-#         'USER': 'root',
-#         'PASSWORD': 'Iarshi4_1381'
-#     }
-# }
 
 

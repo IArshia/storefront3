@@ -26,4 +26,4 @@ DATABASES = {
 
 SECRET_KEY = env('SECRET_KEY')
 
-ALLOWED_HOSTS = ['https://arshia-storefront.onrender.com']
+ALLOWED_HOSTS = ['*']

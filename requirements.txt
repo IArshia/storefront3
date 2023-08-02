@@ -38,7 +38,7 @@ kombu==5.3.1 ; python_version >= '3.8'
 mysqlclient==2.1.1
 oauthlib==3.2.2 ; python_version >= '3.6'
 packaging==23.1 ; python_version >= '3.7'
-pillow==10.0.0
+pillow==9.5.0
 prometheus-client==0.17.1 ; python_version >= '3.6'
 prompt-toolkit==3.0.39 ; python_full_version >= '3.7.0'
 psycopg2-binary==2.9.6
